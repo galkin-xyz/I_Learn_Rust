@@ -14,9 +14,29 @@ fn main() {
 
     for current_day in 1..=12 {
         println!("{} день Рождества", days[current_day]);
-        println!("послала мне любовь моя верная");
-        for gift_index in 1..=current_day {
-            println!("{}", gifts[gift_index]);
+        let clarification = if current_day > 7 {
+                "на Святки " 
+            } else {
+                ""
+            };
+        println!("послала мне {}любовь моя верная", {clarification});
+        let prefix_for_first_gift = if current_day == 1 {
+            ""
+        } else {
+            "и "
+        };
+        for gift_index in (1..=current_day).rev() {
+            let postfix = match gift_index {
+                1 => ".",
+                2 => "",
+                _ => ","
+            };
+            if gift_index == 1 {
+                println!("{}{}{}", prefix_for_first_gift, gifts[gift_index], postfix);
+            } else {
+                println!("{}{}", gifts[gift_index], postfix);
+
+            }
         }
         println!("");
     }
