@@ -15,3 +15,5 @@ diff -s twelwe_days.txt res.txt
 **fibonacci_sequence** - генерирование n-го числа Фибоначчи 
 [Задание в конце третьей главы книги "Язык программирования Rust"](https://doc.rust-lang.ru/book/ch03-05-control-flow.html)
 
+**toj-1293_enya** - Timus Online Judge [1293. Эния](https://acm.timus.ru/print.aspx?space=1&num=1293)
+
