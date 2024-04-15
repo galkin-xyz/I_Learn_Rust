@@ -17,3 +17,5 @@ diff -s twelwe_days.txt res.txt
 
 **toj-1293_enya** - Timus Online Judge [1293. Эния](https://acm.timus.ru/print.aspx?space=1&num=1293)
 
+**toj-1409_two_bandits** - Timus Online Judge [1409. Два бандита](https://acm.timus.ru/print.aspx?space=1&num=1409)
+
