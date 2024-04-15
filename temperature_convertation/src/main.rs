@@ -52,9 +52,9 @@ fn main() {
 }
 
 fn cel2fah(cel_val: f64) -> f64 {
-   return (cel_val * 1.8) + 32.0
+   (cel_val * 1.8) + 32.0
 }
 
 fn fah2cel(fah_val: f64) -> f64 {
-    return (fah_val - 32.0) / 1.8
+   (fah_val - 32.0) / 1.8
 }
