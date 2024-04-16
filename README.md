@@ -19,3 +19,5 @@ diff -s twelwe_days.txt res.txt
 
 **toj-1409_two_bandits** - Timus Online Judge [1409. Два бандита](https://acm.timus.ru/print.aspx?space=1&num=1409)
 
+**toj-1000_a_plus_b** - Timus Online Judge [1000. A+B Problem](https://acm.timus.ru/print.aspx?space=1&num=1000)
+
