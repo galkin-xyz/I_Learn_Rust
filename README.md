@@ -21,3 +21,5 @@ diff -s twelwe_days.txt res.txt
 
 **toj-1000_a_plus_b** - Timus Online Judge [1000. A+B Problem](https://acm.timus.ru/print.aspx?space=1&num=1000)
 
+**toj-1785_localization_difficulties** - Timus Online Judge [1785. Трудности локализации](https://acm.timus.ru/print.aspx?space=1&num=1785)
+
