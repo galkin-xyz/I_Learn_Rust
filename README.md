@@ -23,3 +23,5 @@ diff -s twelwe_days.txt res.txt
 
 **toj-1785_localization_difficulties** - Timus Online Judge [1785. Трудности локализации](https://acm.timus.ru/print.aspx?space=1&num=1785)
 
+**toj-2012_about_grisha_n** - Timus Online Judge [2012. Про Гришу Н.](https://acm.timus.ru/print.aspx?space=1&num=2012)
+
