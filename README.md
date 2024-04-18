@@ -25,3 +25,5 @@ diff -s twelwe_days.txt res.txt
 
 **toj-2012_about_grisha_n** - Timus Online Judge [2012. Про Гришу Н.](https://acm.timus.ru/print.aspx?space=1&num=2012)
 
+**toj-1877_bicycle_codes** - Timus Online Judge [1877. Велосипедные коды](https://acm.timus.ru/print.aspx?space=1&num=1877)
+
