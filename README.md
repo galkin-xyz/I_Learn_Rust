@@ -27,3 +27,5 @@ diff -s twelwe_days.txt res.txt
 
 **toj-1877_bicycle_codes** - Timus Online Judge [1877. Велосипедные коды](https://acm.timus.ru/print.aspx?space=1&num=1877)
 
+**toj-1264_workdays** - Timus Online Judge [1264. Трудовые будни](https://acm.timus.ru/print.aspx?space=1&num=1264)
+
