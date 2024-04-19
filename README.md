@@ -29,3 +29,5 @@ diff -s twelwe_days.txt res.txt
 
 **toj-1264_workdays** - Timus Online Judge [1264. Трудовые будни](https://acm.timus.ru/print.aspx?space=1&num=1264)
 
+**toj-2001_maths_and_berries** - Timus Online Judge [2001. Математики и ягоды](https://acm.timus.ru/print.aspx?space=1&num=2001)
+
