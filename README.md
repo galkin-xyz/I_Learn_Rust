@@ -31,3 +31,5 @@ diff -s twelwe_days.txt res.txt
 
 **toj-2001_maths_and_berries** - Timus Online Judge [2001. Математики и ягоды](https://acm.timus.ru/print.aspx?space=1&num=2001)
 
+**toj-1787_turning_to_mega** - Timus Online Judge [1787. Поворот на МЕГУ](https://acm.timus.ru/print.aspx?space=1&num=1787)
+
