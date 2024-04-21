@@ -35,3 +35,5 @@ diff -s twelwe_days.txt res.txt
 
 **toj-1820_urals_steaks** - Timus Online Judge [1820. Уральские бифштексы](https://acm.timus.ru/print.aspx?space=1&num=1820)
 
+**toj-2066_simple_expression** - Timus Online Judge [2066. Простое выражение](https://acm.timus.ru/print.aspx?space=1&num=2066)
+
