@@ -33,3 +33,5 @@ diff -s twelwe_days.txt res.txt
 
 **toj-1787_turning_to_mega** - Timus Online Judge [1787. Поворот на МЕГУ](https://acm.timus.ru/print.aspx?space=1&num=1787)
 
+**toj-1820_urals_steaks** - Timus Online Judge [1820. Ural steaks](https://acm.timus.ru/print.aspx?space=1&num=1820)
+
