@@ -37,3 +37,5 @@ diff -s twelwe_days.txt res.txt
 
 **toj-2066_simple_expression** - Timus Online Judge [2066. Простое выражение](https://acm.timus.ru/print.aspx?space=1&num=2066)
 
+**toj-1197_one_warrior** - Timus Online Judge [1197. Один в поле воин](https://acm.timus.ru/print.aspx?space=1&num=1197)
+
