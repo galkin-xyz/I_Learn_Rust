@@ -41,3 +41,5 @@ diff -s twelwe_days.txt res.txt
 
 **toj-toj-2100_wedding_lunch** - Timus Online Judge [2100. Свадебный обед](https://acm.timus.ru/print.aspx?space=1&num=2100)
 
+**toj-1880_proper_numbers** - Timus Online Judge [1880. Собственные числа](https://acm.timus.ru/print.aspx?space=1&num=1880)
+
