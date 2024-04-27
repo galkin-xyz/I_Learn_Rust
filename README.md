@@ -43,3 +43,5 @@ diff -s twelwe_days.txt res.txt
 
 **toj-1880_proper_numbers** - Timus Online Judge [1880. Собственные числа](https://acm.timus.ru/print.aspx?space=1&num=1880)
 
+**toj-1639_chockolate2** - Timus Online Judge [1639. Шоколад 2](https://acm.timus.ru/print.aspx?space=1&num=1639)
+
