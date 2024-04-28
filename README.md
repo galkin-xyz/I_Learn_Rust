@@ -45,3 +45,5 @@ diff -s twelwe_days.txt res.txt
 
 **toj-1639_chockolate2** - Timus Online Judge [1639. Шоколад 2](https://acm.timus.ru/print.aspx?space=1&num=1639)
 
+**toj-1910_titan_ruins** - Timus Online Judge [1910. Руины титанов: сокрытый вход](https://acm.timus.ru/print.aspx?space=1&num=1910)
+
