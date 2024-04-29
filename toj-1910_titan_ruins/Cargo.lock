@@ -4,4 +4,4 @@ version = 3
 
 [[package]]
 name = "toj-1910_titan_ruins"
-version = "0.1.0"
+version = "0.2.0"
