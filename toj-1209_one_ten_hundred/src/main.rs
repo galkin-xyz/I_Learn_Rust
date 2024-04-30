@@ -1,21 +1,26 @@
 use std::io;
 
 const ONES_COUNT: usize = 92682; // Определено экмпериментально
+const MAX_POS_COUNT: usize = 65535;
 
 fn main() {
     let mut input = String::new();
     let mut answers_string = String::new();
+    let mut positions: [u32; MAX_POS_COUNT] = [0; MAX_POS_COUNT];
     let mut one_positions: [u32; ONES_COUNT] = [0; ONES_COUNT];
 
     fill(&mut one_positions);
 
     io::stdin().read_line(&mut input).expect("Ошибка ввода.");
-    let positions_count: u16 = input.trim().parse().expect("Ошибка данных.");
-    for _ in 0..positions_count {
+    let positions_count: usize = input.trim().parse().expect("Ошибка данных.");
+    for index in 0..positions_count {
         let mut input = String::new();
         io::stdin().read_line(&mut input).expect("Ошибка ввода.");
         let position: u32 = input.trim().parse().expect("Ошибка данных.");
-        if is_one(position, &one_positions) {
+        positions[index] = position;
+    }
+    for index in 0..positions_count {
+        if is_one(positions[index], &one_positions) {
             answers_string.push('1');
         } else {
             answers_string.push('0');
