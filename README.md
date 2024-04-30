@@ -47,3 +47,5 @@ diff -s twelwe_days.txt res.txt
 
 **toj-1910_titan_ruins** - Timus Online Judge [1910. Руины титанов: сокрытый вход](https://acm.timus.ru/print.aspx?space=1&num=1910)
 
+**toj-1209_one_ten_hundred** - Timus Online Judge [1209. 1, 10, 100, 1000...](https://acm.timus.ru/print.aspx?space=1&num=1209)
+
