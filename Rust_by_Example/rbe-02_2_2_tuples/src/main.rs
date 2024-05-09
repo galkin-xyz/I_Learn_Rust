@@ -56,5 +56,5 @@ fn main() {
     let matrix = Matrix(1.1, 1.2, 2.1, 2.2);
     println!("{:?}", matrix);
     println!("Матрица:\n{}", matrix);
-    println!("Транспонированная матрица:\n {}", transpose(matrix));
+    println!("Транспонированная матрица:\n{}", transpose(matrix));
 }
