@@ -21,7 +21,7 @@ fn main() {
         println!("{MIN_DURATION}");
         return;
     }
-    
+
     let work_vol = steaks_count * STEAK_SIDES * FRYING_TIME;
     let res = if work_vol % pan_capacity == 0 {
         work_vol / pan_capacity

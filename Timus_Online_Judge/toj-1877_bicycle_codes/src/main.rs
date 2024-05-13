@@ -9,12 +9,10 @@ fn main() {
     io::stdin().read_line(&mut code2).expect("Ошибка ввода.");
     let code2: u16 = code2.trim().parse().expect("Ошибка данных.");
 
-    let res = 
-        if (code1 % 2 == 1) && (code2 % 2 == 0) { 
-            "no" 
-        }
-        else { 
-            "yes" 
-        };
+    let res = if (code1 % 2 == 1) && (code2 % 2 == 0) {
+        "no"
+    } else {
+        "yes"
+    };
     println!("{res}");
 }

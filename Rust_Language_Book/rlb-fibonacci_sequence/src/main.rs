@@ -7,13 +7,18 @@ fn main() {
     loop {
         println!("Введите номер члена последовательности или <Enter> для выхода.");
         let mut seq_number = String::new();
-        io::stdin().read_line(&mut seq_number).expect("Ошибка при чтении данных!");
+        io::stdin()
+            .read_line(&mut seq_number)
+            .expect("Ошибка при чтении данных!");
         let seq_number: u16 = match seq_number.trim().parse() {
             Ok(num) => num,
             Err(_) => break,
         };
-    println!("Значение {} члена последовательности Фибоначчи равно {}", 
-             seq_number, fibonacci_number(seq_number));
+        println!(
+            "Значение {} члена последовательности Фибоначчи равно {}",
+            seq_number,
+            fibonacci_number(seq_number)
+        );
     }
 }
 
@@ -31,7 +36,7 @@ fn fibonacci_number(n: u16) -> u32 {
                 fn_2 = fn_1;
                 fn_1 = r#fn;
                 r#fn = fn_2 + fn_1;
-            };
+            }
             r#fn
         }
     }

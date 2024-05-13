@@ -11,12 +11,12 @@ fn main() {
         index += 1;
     }
     let traffic_light_capacity: &u16 = &params[0];
-//    let duration: &u16 = &params[1];
+    //    let duration: &u16 = &params[1];
 
     let mut cars_left: u16 = 0;
-    input = String::new();    
+    input = String::new();
     io::stdin().read_line(&mut input).expect("Ошибка ввода.");
-    
+
     for word in input.split_whitespace() {
         let cars_in: u16 = word.trim().parse().expect("Ошибка данных.");
         cars_left = if cars_left + cars_in > *traffic_light_capacity {

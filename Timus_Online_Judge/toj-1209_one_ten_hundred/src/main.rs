@@ -38,10 +38,10 @@ fn fill(one_positions: &mut [u32; ONES_COUNT]) -> u32 {
     while u32::MAX - one_position > increment {
         one_positions[index] = one_position;
         one_position += increment;
-        increment +=1;
+        increment += 1;
         index += 1;
     }
-    increment 
+    increment
 }
 
 fn is_one(position: u32, one_positions: &[u32; ONES_COUNT]) -> bool {
@@ -50,5 +50,5 @@ fn is_one(position: u32, one_positions: &[u32; ONES_COUNT]) -> bool {
     while one_positions[index] < position {
         index += 1;
     }
-    position == one_positions[index] 
+    position == one_positions[index]
 }
