@@ -4,4 +4,4 @@ version = 3
 
 [[package]]
 name = "rbe-02_2_3_arrays_and_slices"
-version = "0.1.0"
+version = "0.1.1"

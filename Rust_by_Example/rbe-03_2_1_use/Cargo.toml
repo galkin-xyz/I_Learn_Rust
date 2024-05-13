@@ -1,6 +1,6 @@
 [package]
 name = "rbe-03_2_1_use"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 [dependencies]

@@ -13,12 +13,12 @@ enum Work {
 fn main() {
     use crate::Status::{Poor, Rich};
     use crate::Work::*;
-    
+
     // Эквивалентно Status::Poor
     let status = Poor;
     // Эквивалентно Work::Civilian
     let work = Civilian;
-    
+
     match status {
         Rich => println!("Статус \"Богатый\""),
         Poor => println!("Статус \"Бедный\""),

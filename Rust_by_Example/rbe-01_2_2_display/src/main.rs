@@ -58,11 +58,18 @@ fn main() {
     let big_range = MinMax(-300, 300);
     println!("Маленький диапазон {small_range}, большой диапазон {big_range}.");
 
-    let point = Point3D {x: 3.5, y: 7.4, z: 0.8};
+    let point = Point3D {
+        x: 3.5,
+        y: 7.4,
+        z: 0.8,
+    };
     println!("Вывод через fmt::Debug: {:?}", point);
     println!("Вывод через fmt::Display: {}", point);
 
-    let complex = Complex {real: 3.3, imag: 7.2};
+    let complex = Complex {
+        real: 3.3,
+        imag: 7.2,
+    };
     println!("Вывод через fmt::Debug: {:?}", complex);
     println!("Вывод через fmt::Display: {}", complex);
 }

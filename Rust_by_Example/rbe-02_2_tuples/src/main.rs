@@ -6,10 +6,9 @@ fn reverse(pair: (i32, bool)) -> (bool, i32) {
     (bool_param, int_param)
 }
 
-
 #[derive(Debug)]
 #[allow(dead_code)]
-struct Matrix(f32 ,f32 ,f32 ,f32);
+struct Matrix(f32, f32, f32, f32);
 
 impl fmt::Display for Matrix {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
@@ -28,19 +27,18 @@ fn transpose(mut matrix: Matrix) -> Matrix {
 
 fn main() {
     // элементы могут быть разных типов
-    let long_tuple = (1u8, 2u16, 3u32, 4u64, 
-                      -1i8, -2i16, -3i32, -4i64,
-                      0.1f32, 0.2f64,
-                      'a', true);
+    let long_tuple = (
+        1u8, 2u16, 3u32, 4u64, -1i8, -2i16, -3i32, -4i64, 0.1f32, 0.2f64, 'a', true,
+    );
     println!("Первое значение длинного кортежа: {}", long_tuple.0);
     println!("Второе значение длинного кортежа: {}", long_tuple.1);
 
     let tuple_of_tuples = ((1u8, 2u16, 3u32), (4u64, -1i16), -2i16);
     println!("Кортеж из кортежей {:?}", tuple_of_tuples);
 
-    // максимальное количество элементов кортежа, 
+    // максимальное количество элементов кортежа,
     // которое можно распечатать через трейт Debug {:?} - 12
-    
+
     let pair = (1, true);
     println!("Пара значений: {:?}", pair);
     println!("Обратный порядок пары значений: {:?}", reverse(pair));

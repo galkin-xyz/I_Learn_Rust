@@ -14,7 +14,7 @@ fn inspect(event: WebEvent) {
         WebEvent::Paste(s) => println!("вставлена строка \"{}\".", s),
         WebEvent::Click { x, y } => {
             println!("нажатие в точке x = {}, y = {}.", x, y);
-        },
+        }
     }
 }
 
@@ -25,7 +25,7 @@ enum VeryVerboseEnumOfThingsToDoWithNumbers {
 }
 
 // Создание псевдонима для перечисления
-type Operations = VeryVerboseEnumOfThingsToDoWithNumbers; 
+type Operations = VeryVerboseEnumOfThingsToDoWithNumbers;
 
 #[allow(dead_code)]
 impl VeryVerboseEnumOfThingsToDoWithNumbers {
