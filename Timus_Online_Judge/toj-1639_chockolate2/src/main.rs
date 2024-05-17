@@ -2,16 +2,14 @@ use std::io;
 
 fn main() {
     let mut input = String::new();
-    let mut params: [u16; 2] = [0; 2];
-    let mut index: usize = 0;
     io::stdin().read_line(&mut input).expect("Ошибка ввода.");
-    for word in input.split_whitespace() {
-        params[index] = word.trim().parse().expect("Ошибка данных.");
-        index += 1;
-    }
-    let m = params[0];
-    let n = params[1];
-    let breaks_count = (m - 1) + (n - 1) * m;
+    let mut iter = input.split_whitespace();
+    let m = iter.next().expect("Ошибка данных.");
+    let m: u8 = m.trim().parse().expect("Ошибка данных.");
+    let n = iter.next().expect("Ошибка данных.");
+    let n: u8 = n.trim().parse().expect("Ошибка данных.");
+
+    let breaks_count: u16 = (m as u16 - 1) + (n as u16 - 1) * m as u16;
     let strategy = match breaks_count % 2 {
         1 => "[:=[first]",
         _ => "[second]=:]",

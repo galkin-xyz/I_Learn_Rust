@@ -1,21 +1,17 @@
 use std::io;
 
 fn main() {
-    let mut input = String::new();
-    let mut params: [u16; 2] = [0; 2];
-    let mut index: usize = 0;
-
-    io::stdin().read_line(&mut input).expect("Ошибка ввода.");
-    for word in input.split_whitespace() {
-        params[index] = word.trim().parse().expect("Ошибка данных.");
-        index += 1;
-    }
     const STEAK_SIDES: u16 = 2;
     const FRYING_TIME: u16 = 1;
     const MIN_DURATION: u16 = STEAK_SIDES * FRYING_TIME;
 
-    let steaks_count = params[0];
-    let pan_capacity = params[1];
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("Ошибка ввода.");
+    let mut iter = input.split_whitespace();
+    let steaks_count = iter.next().expect("Ошибка данных.");
+    let steaks_count: u16 = steaks_count.trim().parse().expect("Ошибка данных."); 
+    let pan_capacity = iter.next().expect("Ошибка данных.");
+    let pan_capacity: u16 = pan_capacity.trim().parse().expect("Ошибка данных."); 
 
     if steaks_count <= pan_capacity {
         println!("{MIN_DURATION}");

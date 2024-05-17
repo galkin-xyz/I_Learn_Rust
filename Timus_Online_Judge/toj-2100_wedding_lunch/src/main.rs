@@ -7,7 +7,7 @@ fn main() {
         .expect("Ошибка ввода.");
     let invitations_count: usize = invitations_count.trim().parse().expect("Ошибка данных.");
 
-    let mut guests_count: u16 = 2;
+    let mut guests_count: u8 = 2;
     for _ in 0..invitations_count {
         let mut invitation = String::new();
         io::stdin()
@@ -23,6 +23,6 @@ fn main() {
     if guests_count == 13 {
         guests_count += 1;
     }
-    let wedding_lunch_cost: u16 = guests_count * 100;
+    let wedding_lunch_cost: u16 = guests_count as u16 * 100;
     println!("{wedding_lunch_cost}");
 }

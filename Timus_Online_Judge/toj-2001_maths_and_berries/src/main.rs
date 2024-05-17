@@ -8,10 +8,8 @@ fn main() {
     for weighing_num in 1..=3 {
         let mut input = String::new();
         io::stdin().read_line(&mut input).expect("Ошибка ввода.");
-        let mut math: usize = MATH_A;
-        for word in input.split_whitespace() {
-            weightings[weighing_num][math] = word.trim().parse().expect("Ошибка данных.");
-            math += 1;
+        for (math_num, word) in input.split_whitespace().enumerate() {
+            weightings[weighing_num][math_num] = word.trim().parse().expect("Ошибка данных.");
         }
     }
     let math_a_berries_weight = weightings[1][MATH_A] - weightings[3][MATH_A];

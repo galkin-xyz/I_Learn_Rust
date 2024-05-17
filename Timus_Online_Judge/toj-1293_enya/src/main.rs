@@ -1,15 +1,17 @@
 use std::io;
 
 fn main() {
+    const SIDE_COUNT: u32 = 2;
+    const EXP: u32 = 1;
     let mut input = String::new();
-    let mut params: [u32; 3] = [0, 0, 0];
-    let mut index: usize = 0;
+    let mut params: [u8; 3] = [0, 0, 0];
 
     io::stdin().read_line(&mut input).expect("Ошибка ввода.");
-    for word in input.split_whitespace() {
+    for (index, word) in input.split_whitespace().enumerate() {
         params[index] = word.parse().expect("Ошибка ввода.");
-        index += 1;
     }
-    let res: u32 = 2 * params[0] * params[1] * params[2];
-    println!("{}", res);
+    println!(
+        "{}",
+        params[0] as u32 * params[1] as u32 * params[2] as u32 * SIDE_COUNT * EXP
+    );
 }

@@ -2,16 +2,10 @@ use std::io;
 
 fn main() {
     let mut input = String::new();
-    let mut params: [u16; 2] = [0; 2];
-    let mut index: usize = 0;
-
     io::stdin().read_line(&mut input).expect("Ошибка ввода.");
-    for word in input.split_whitespace() {
-        params[index] = word.trim().parse().expect("Ошибка данных.");
-        index += 1;
-    }
-    let traffic_light_capacity: &u16 = &params[0];
-    //    let duration: &u16 = &params[1];
+    let mut iter = input.split_whitespace();
+    let traffic_light_capacity = iter.next().expect("Ошибка данных.");
+    let traffic_light_capacity: u8 = traffic_light_capacity.trim().parse().expect("Ошибка данных.");
 
     let mut cars_left: u16 = 0;
     input = String::new();
@@ -19,8 +13,8 @@ fn main() {
 
     for word in input.split_whitespace() {
         let cars_in: u16 = word.trim().parse().expect("Ошибка данных.");
-        cars_left = if cars_left + cars_in > *traffic_light_capacity {
-            cars_left + cars_in - traffic_light_capacity
+        cars_left = if cars_left + cars_in > traffic_light_capacity as u16 {
+            cars_left + cars_in - traffic_light_capacity as u16
         } else {
             0
         }
