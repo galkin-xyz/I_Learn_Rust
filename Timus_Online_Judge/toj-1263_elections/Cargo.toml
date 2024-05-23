@@ -1,0 +1,6 @@
+[package]
+name = "toj-1263_elections"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
