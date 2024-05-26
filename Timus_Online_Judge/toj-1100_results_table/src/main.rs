@@ -26,15 +26,27 @@ fn main() {
             .expect("Data error");
         results_table[i] = (id, score);
     }
-    for j in 1..teams_count {
-        for i in 0..teams_count - j {
-            if results_table[i].1 < results_table[i + 1].1 {
-                let tmp = results_table[i + 1];
-                results_table[i + 1] = results_table[i];
-                results_table[i] = tmp;
-            }
-        }
-    }
+    // сортировка методом пузырька. Решение не проходит "Time limit exceeded"
+    //    for j in 1..teams_count {
+    //        for i in 0..teams_count - j {
+    //            if results_table[i].1 < results_table[i + 1].1 {
+    //                let tmp = results_table[i + 1];
+    //                results_table[i + 1] = results_table[i];
+    //                results_table[i] = tmp;
+    //            }
+    //        }
+    //    }
+    // сортировка методом вставки. Решение не проходит "Time limit exceeded"
+    //    for j in 1..teams_count {
+    //        let mut i = j;
+    //        while i > 0 && results_table[i].1 > results_table[i - 1].1 {
+    //                let tmp = results_table[i - 1];
+    //                results_table[i - 1] = results_table[i];
+    //                results_table[i] = tmp;
+    //                i -= 1;
+    //        }
+    //    }
+
     for i in 0..teams_count {
         println!("{} {}", results_table[i].0, results_table[i].1);
     }
