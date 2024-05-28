@@ -29,19 +29,9 @@ fn main() {
         .trim()
         .parse()
         .expect("Data error");
-/*
     while petya_price < taxi_price {
-        if petya_price + petya_discount < taxi_price {
-            petya_price += petya_discount;
-        } else {
-            break;
-        }
-        if taxi_price - taxi_discount > petya_price {
-            taxi_price -= taxi_discount;
-        } else {
-            break;
-        }
+        petya_price = taxi_price.min(petya_price + petya_discount);
+        taxi_price = petya_price.max(taxi_price - taxi_discount);
     }
     println!("{}", petya_price.max(taxi_price));
-*/    
 }
