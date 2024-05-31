@@ -1,0 +1,6 @@
+[package]
+name = "toj-1493_one_step_from_happiness"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
