@@ -1,9 +1,11 @@
-use std::io;
 use std::collections::HashMap;
+use std::io;
 
 fn main() {
     let mut submits_count = String::new();
-    io::stdin().read_line(&mut submits_count).expect("Read error");
+    io::stdin()
+        .read_line(&mut submits_count)
+        .expect("Read error");
     let submits_count: usize = submits_count.trim().parse().expect("Data error");
 
     let mut commands = HashMap::new();

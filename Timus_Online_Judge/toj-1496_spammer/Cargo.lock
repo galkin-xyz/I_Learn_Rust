@@ -4,4 +4,4 @@ version = 3
 
 [[package]]
 name = "toj-1496_spammer"
-version = "0.1.0"
+version = "0.1.1"
