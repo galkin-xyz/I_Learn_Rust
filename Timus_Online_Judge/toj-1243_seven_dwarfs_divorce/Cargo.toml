@@ -1,0 +1,6 @@
+[package]
+name = "toj-1243_seven_dwarfs_divorce"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
