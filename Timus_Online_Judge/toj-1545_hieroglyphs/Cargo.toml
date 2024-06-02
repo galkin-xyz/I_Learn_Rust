@@ -1,0 +1,6 @@
+[package]
+name = "toj-1545_hieroglyphs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
