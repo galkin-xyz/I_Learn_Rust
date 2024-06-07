@@ -5,22 +5,14 @@ fn main() {
     io::stdin().read_line(&mut encryption).expect("Read error");
 
     let mut decryption = String::new();
-    let mut last_ch: char = '.';
-    for (pos, ch) in encryption.chars().enumerate() {
-        if pos == 0 {
+    let mut last_ch: Option<char> = None;
+    for ch in encryption.chars() {
+        if last_ch == None || last_ch != Some(ch) {
             decryption.push(ch);
-            last_ch = ch;
+            last_ch = Some(ch);
         } else {
-            if ch == last_ch {
-                decryption.pop().expect("Data error");
-                last_ch = match decryption.chars().last() {
-                    None => '.',
-                    Some(ch) => ch,
-                }
-            } else {
-                decryption.push(ch);
-                last_ch = ch;
-            }
+            decryption.pop().expect("Data error");
+            last_ch = decryption.chars().last();
         }
     }
     println!("{}", decryption);
