@@ -1,0 +1,6 @@
+[package]
+name = "toj-1837_isenbaev_number"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
