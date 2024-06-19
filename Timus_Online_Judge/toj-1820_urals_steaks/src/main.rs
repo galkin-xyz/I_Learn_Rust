@@ -7,11 +7,11 @@ fn main() {
 
     let mut input = String::new();
     io::stdin().read_line(&mut input).expect("Ошибка ввода.");
-    let mut iter = input.split_whitespace();
-    let steaks_count = iter.next().expect("Ошибка данных.");
-    let steaks_count: u16 = steaks_count.trim().parse().expect("Ошибка данных."); 
-    let pan_capacity = iter.next().expect("Ошибка данных.");
-    let pan_capacity: u16 = pan_capacity.trim().parse().expect("Ошибка данных."); 
+    let mut iter = input
+        .split_whitespace()
+        .map(|x| x.parse::<u16>().expect("Ошибка данных."));
+    let steaks_count: u16 = iter.next().expect("Ошибка данных.");
+    let pan_capacity: u16 = iter.next().expect("Ошибка данных.");
 
     if steaks_count <= pan_capacity {
         println!("{MIN_DURATION}");
