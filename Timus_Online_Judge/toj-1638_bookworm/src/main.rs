@@ -6,10 +6,12 @@ fn main() {
     let mut iter = input
         .split_whitespace()
         .map(|x| x.parse().expect("Data error"));
-    let thickness_vol: u8 = iter.next().expect("Data error");
-    let thickness_binding: u8 = iter.next().expect("Data error");
-    let start_vol: u8 = iter.next().expect("Data error");
-    let end_vol: u8 = iter.next().expect("Data error");
-
-    println!("{thickness_vol} {thickness_binding} {start_vol} {end_vol}");
+    let thickness_vol: i16 = iter.next().expect("Data error");
+    let thickness_binding: i16 = iter.next().expect("Data error");
+    let start_vol: i16 = iter.next().expect("Data error");
+    let end_vol: i16 = iter.next().expect("Data error");
+    println!(
+        "{}",
+        ((end_vol - start_vol) * (thickness_vol + 2 * thickness_binding) - thickness_vol).abs()
+    );
 }
